@@ -1,0 +1,51 @@
+#+TITLE: Jyun-Ao Lin's Homepage
+#+AUTHOR: JAC
+#+OPTIONS: toc:nil num:nil
+
+* Personal info
+
+* Research Interests
+Automated Reasoning, cryptography
+
+* Publications
+** Journal and Conferences
+- Y.-F. Chen, K.-M. Chung, O. Lengal, *J.-A. Lin*, W.-L. Tsai, /AutoQ:
+  An Automata-based Quantum Circuit Verifier/, CAV 2023.
+- Y.-F. Chen, K.-M. Chung, O. Lengal, *J.-A. Lin*, W.-L. Tsai,
+  D.-D. Yen, /An Autamata-based Framework for Verification and Bug
+  Hunting in Quantum Circuits/, *Distinguished Paper Award*,
+  PLDI 2023.
+- *J.-A. Lin*, /Spherical Hall algebra of a weighted projective
+  curve/, International Mathematics Research Notices, (SCI)
+  doi:10.1093/imrn/rny158, Vol. 2020, Issue 15, Aug. 2020, 4721–4775.
+- *J.-A. Lin*, /A new involution for quantum loop algebras/, Journal
+  of Algebra, (SCI) vol. *480*, (2017), 368–384.
+
+** Extended Abstracts
+- Y.-F. Chen, K.-M. Chung, O. Lengal, *J.-A. Lin*, W.-L. Tsai,
+  D.-D. Yen, /An Autamata-based Framework for Verification and Bug
+  Hunting in Quantum Circuits/, QPL 2023.
+
+* Teaching
+** 2024 Spring
+- Computational Logic and Software Verification ([[][2024 Spring]], NTUT)
+- Formal Language ([[][2024 Spring]], NTUT)
+
+** Past
+- Theorical Aspects of Modern Cryptograpgy ([[https://hackmd.io/@csie-tamc/B1-JoyZf_][2021 Spring]],
+  [[https://hackmd.io/@csie-tamc/SJTFrm3RF][2022 Spring]], [[https://hackmd.io/@csie-tamc/Syiol5A5s][2023 Spring]] NTU CSIE)
+- Calculus A (2017-2018 MATH NTU, 2020 Spring XMU Malaysia)
+- Advanced Mathematics (2020 Spring, XMU Malaysia)
+- Algebra and Analytic Geometry (2019 Fall, XMU Malaysia)
+- Engineering Mathematics III (2019 Fall, XMU Malaysia)
+- Multi Variables Calculus (2020 Spring, XMU Malaysia)
+- Fourier Analysis for physics (2014 Spring, TA Universite de
+  Paris-Sud Orsay)
+- WIMS session for Linear Algebras (2014 Spring, TA Universite de
+  Paris-Sud Orsay)
+- S1 Mathematics (2013 Fall, TA, Universite de Paris-Sud Orsay)
+  
+* Tools
+- [[https://github.com/alan23273850/AutoQ][AutoQ]]: An automata-based C++ tool for quantum program verification.
+  
+
