@@ -1,6 +1,6 @@
 #+TITLE: Jyun-Ao Lin's Homepage
 #+AUTHOR: JAC
-#+OPTIONS: toc:nil num:nil author:nil time-stamp-file:nil
+#+OPTIONS: toc:nil num:nil
 
 * Personal info
 
