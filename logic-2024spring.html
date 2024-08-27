@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-06-24 Mon 23:29 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Computational Logic and Software Verification</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Computational Logic and Software Verification</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org141aa83">General Infromation</a>
+<ul>
+<li><a href="#org667e9c1">Overviews</a></li>
+<li><a href="#org427b922">Recommended Prerequisites</a></li>
+<li><a href="#org47a60e9">Communication</a></li>
+<li><a href="#org98cc8c9">Office Hours</a></li>
+</ul>
+</li>
+<li><a href="#org897e049">Topics and Class Schedule</a>
+<ul>
+<li><a href="#org63d0e29">Topics</a>
+<ul>
+<li><a href="#org71125f9">Propositional Logic</a></li>
+<li><a href="#org05cd630">Predicate Logic</a></li>
+<li><a href="#orgfb2dd0b">Model Checking</a></li>
+<li><a href="#org480029d">Program Verification</a></li>
+</ul>
+</li>
+<li><a href="#org40406a5">Class Schedule</a></li>
+</ul>
+</li>
+<li><a href="#org1a4dc4c">Useful References</a></li>
+<li><a href="#orgf458189">Evalution</a>
+<ul>
+<li><a href="#org44993be">Asseignments (50 %)</a>
+<ul>
+<li><a href="#orgbdc377b">Written Homework:</a></li>
+<li><a href="#org3aa63c7">Programming Homework:</a></li>
+<li><a href="#orgebd6437">Academic Integrity</a></li>
+</ul>
+</li>
+<li><a href="#orgf8da041">Mid-terms (20 %)</a></li>
+<li><a href="#org2ca4dbc">Final Project (20 %)</a></li>
+<li><a href="#orgb593f47">Attendance (10 %)</a></li>
+</ul>
+</li>
+<li><a href="#orgeb3486f">Some tools you may be interested in</a>
+<ul>
+<li><a href="#orgf0a3bb5">Proof Assistant</a></li>
+<li><a href="#org6f35059">LaTeX</a></li>
+<li><a href="#org5a149d5">Others</a></li>
+</ul>
+</li>
+<li><a href="#orgcb98352">Acknowledgement and  Credits</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org141aa83" class="outline-2">
+<h2 id="org141aa83">General Infromation</h2>
+<div class="outline-text-2" id="text-org141aa83">
+<p>
+<b>Courese Number</b>: 332402<br />
+<b>Instructor</b>: Jyun-Ao Lin<br />
+<b>Location</b>: 二教 204(e)<br />
+<b>Time</b>: 09:10 &#x2013; 12:00, Wednesday
+</p>
+</div>
+<div id="outline-container-org667e9c1" class="outline-3">
+<h3 id="org667e9c1">Overviews</h3>
+<div class="outline-text-3" id="text-org667e9c1">
+<p>
+Computational logic has been used in a wide range of application in
+computer science, ranging from the deductive approach to Artificial
+Intelligence advocated by AI’s founder John McCarthy, to proving the
+absence of bugs in large industrial software such as the 14th metro
+line in Paris, or checking difficult theorems the as the one of
+Feit-Thompson in the classification of finite simple groups.
+</p>
+
+<p>
+The goal of this course is to explain how logic can be used in order
+for modeling problems of computational or mathematical nature, and how
+computers can be used to achieve this. 
+</p>
+</div>
+</div>
+<div id="outline-container-org427b922" class="outline-3">
+<h3 id="org427b922">Recommended Prerequisites</h3>
+<div class="outline-text-3" id="text-org427b922">
+<p>
+Some basic discrete mathematics, computer programming, algorithms,
+theory of computation.
+</p>
+</div>
+</div>
+<div id="outline-container-org47a60e9" class="outline-3">
+<h3 id="org47a60e9">Communication</h3>
+<div class="outline-text-3" id="text-org47a60e9">
+<p>
+When you need help from the course staff, please use office hours or
+hang around after lecture. For issues requiring privacy, please feel
+free to email the course instructor.
+</p>
+</div>
+</div>
+<div id="outline-container-org98cc8c9" class="outline-3">
+<h3 id="org98cc8c9">Office Hours</h3>
+<div class="outline-text-3" id="text-org98cc8c9">
+<p>
+13:00&#x2013;17:30 Monday
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org897e049" class="outline-2">
+<h2 id="org897e049">Topics and Class Schedule</h2>
+<div class="outline-text-2" id="text-org897e049">
+</div>
+<div id="outline-container-org63d0e29" class="outline-3">
+<h3 id="org63d0e29">Topics</h3>
+<div class="outline-text-3" id="text-org63d0e29">
+</div>
+<div id="outline-container-org71125f9" class="outline-4">
+<h4 id="org71125f9">Propositional Logic</h4>
+</div>
+<div id="outline-container-org05cd630" class="outline-4">
+<h4 id="org05cd630">Predicate Logic</h4>
+</div>
+<div id="outline-container-orgfb2dd0b" class="outline-4">
+<h4 id="orgfb2dd0b">Model Checking</h4>
+</div>
+<div id="outline-container-org480029d" class="outline-4">
+<h4 id="org480029d">Program Verification</h4>
+</div>
+</div>
+<div id="outline-container-org40406a5" class="outline-3">
+<h3 id="org40406a5">Class Schedule</h3>
+<div class="outline-text-3" id="text-org40406a5">
+<p>
+The current schedule is tentative and subject to change.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Date</th>
+<th scope="col" class="org-right">#</th>
+<th scope="col" class="org-left">Lecture</th>
+<th scope="col" class="org-left">Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">02/21</td>
+<td class="org-right">1</td>
+<td class="org-left">Introduction</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EfDQu6Bqi2lDuTe9VLYI1UgB-KrfcXXvQ0Tv8ix8rfVIog?e=RJXYl0">intro slide</a>,<a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/Ea99wbN9q9dPuMA8Gy3MspkBZKMZxVKUR65bGEfa4rrgcA?e=CgKGuP">PL-1</a></td>
+</tr>
+
+<tr>
+<td class="org-left">02/28</td>
+<td class="org-right">2</td>
+<td class="org-left">Holiday</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/06</td>
+<td class="org-right">3</td>
+<td class="org-left">Propositional Logic</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EQ-2CAbAHcdPjW8zf3s-RuUB29TL8ZVDK5Ord4v6AUEq7w?e=z3qqcu">PL slide</a></td>
+</tr>
+
+<tr>
+<td class="org-left">03/13</td>
+<td class="org-right">4</td>
+<td class="org-left">SAT-Solver</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EbezlcxkGCJPpqQIRRYhPz8BFBmpcMrkyv89WLd35ekZ1g?e=TXn9iy">SAT Slide</a></td>
+</tr>
+
+<tr>
+<td class="org-left">03/20</td>
+<td class="org-right">5</td>
+<td class="org-left">DPLL and CDCL</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EY-SLy83xFVHlHKlQiKqFrEBtD8jH-c4YgvIVeiWILgS0A?e=KeQarB">DPLL/CDCL slide</a></td>
+</tr>
+
+<tr>
+<td class="org-left">03/27</td>
+<td class="org-right">6</td>
+<td class="org-left">First-Order Logic</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/ERXokwzKmZZDsnsy2km1n0YBe3Vv8_OUQtw4wQNnPo-H8g?e=00gefQ">FOL slide</a></td>
+</tr>
+
+<tr>
+<td class="org-left">04/03</td>
+<td class="org-right">7</td>
+<td class="org-left">Earthquake</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/Ef6xney10K9AtsyaST2782wB4D4AM53Gigcv44aqiKfGBA?e=CdXaPZ">FOT slide</a></td>
+</tr>
+
+<tr>
+<td class="org-left">04/10</td>
+<td class="org-right">8</td>
+<td class="org-left">First-Order Theory</td>
+<td class="org-left">see above</td>
+</tr>
+
+<tr>
+<td class="org-left">04/17</td>
+<td class="org-right">9</td>
+<td class="org-left">Review</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/24</td>
+<td class="org-right">10</td>
+<td class="org-left">Mid-term</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">05/01</td>
+<td class="org-right">11</td>
+<td class="org-left">Quantifier-Elimination</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EdDxa5PShOlKu71gsK5rhnoBILjlzDmUvJEW8aO8LFUEDw?e=z8fYtB">QE slide</a></td>
+</tr>
+
+<tr>
+<td class="org-left">05/08</td>
+<td class="org-right">12</td>
+<td class="org-left">LTL Model-Checking</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EcJaUPQcV7dOhnwK6YVwFYoBvOb70oMTN9J3m6r0F-hK0Q?e=liG7fO">LTL-MC slide</a></td>
+</tr>
+
+<tr>
+<td class="org-left">05/15</td>
+<td class="org-right">13</td>
+<td class="org-left">CTL Model-Checking</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EW3lFrSUWnhLlr2Xbhwar7oBYhHvuuL5AjRQvSh5suioVQ?e=gTUtGk">CTL-MC slide</a></td>
+</tr>
+
+<tr>
+<td class="org-left">05/22</td>
+<td class="org-right">14</td>
+<td class="org-left">SAT-based Model-Checking Algorithm</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EZxyRKrOO6JGpj5hRj_Zo7cBPVhN_leT-4AK72mgo-iHaQ?e=NmvqbW">SAT-MC slide</a></td>
+</tr>
+
+<tr>
+<td class="org-left">05/29</td>
+<td class="org-right">15</td>
+<td class="org-left">Program Verification</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/Ecoza1KkKd1HhWTFi7FQSmUBpO3q3bvx5YsqBk2Y0u3ttA?e=VyIakp">Prog-Verf slide</a></td>
+</tr>
+
+<tr>
+<td class="org-left">06/05</td>
+<td class="org-right">16</td>
+<td class="org-left">Total Correctness</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EXCP1MGNR0BBipowHxpEPRIBj_pBPI90Se_X-rh9g_rhmg?e=IXEGyI">Total-Corr slide</a></td>
+</tr>
+
+<tr>
+<td class="org-left">06/12</td>
+<td class="org-right">17</td>
+<td class="org-left">Final Project Presentation</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">06/19</td>
+<td class="org-right">18</td>
+<td class="org-left">Final Project Presentation</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-org1a4dc4c" class="outline-2">
+<h2 id="org1a4dc4c">Useful References</h2>
+<div class="outline-text-2" id="text-org1a4dc4c">
+<ul class="org-ul">
+<li>A. R. Bradley, Z. Manna,
+<a href="http://www.springer.com/computer/theoretical+computer+science/book/978-3-540-74112-1">Calculus
+of Computation</a></li>
+<li>D. Kroening, O. Strichman,
+<a href="http://www.decision-procedures.org/">Decision Procedures</a></li>
+<li>J. Harrison, <a href="https://www.cl.cam.ac.uk/~jrh13/atp/">Handbook of
+Practical Logic and Automated Reasoning</a></li>
+<li>C. Baier, J.-P. Katoen,
+<a href="http://is.ifmo.ru/books/_principles_of_model_checking.pdf">Principal
+of Model Checking</a></li>
+<li>K. R. Apt, F. S. Boer, E.-R. Olderog,
+<a href="https://link.springer.com/book/10.1007%2F978-1-84882-745-5">Verification
+of Sequential and Concurrent Program</a></li>
+<li>F. Nielson, H. R. Nielson, C. Hankin,
+<a href="https://link.springer.com/book/10.1007/978-3-662-03811-6">Principal
+of Program Analysis</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf458189" class="outline-2">
+<h2 id="orgf458189">Evalution</h2>
+<div class="outline-text-2" id="text-orgf458189">
+</div>
+<div id="outline-container-org44993be" class="outline-3">
+<h3 id="org44993be">Asseignments (50 %)</h3>
+<div class="outline-text-3" id="text-org44993be">
+<p>
+<a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EcrMsVG04ydCgXt3U8NSprkBFLwoocXvzLq8g6xpScTN3g?e=6JrWUm">Homework 1</a>
+</p>
+</div>
+<div id="outline-container-orgbdc377b" class="outline-4">
+<h4 id="orgbdc377b">Written Homework:</h4>
+<div class="outline-text-4" id="text-orgbdc377b">
+<p>
+The goal of the written homework is to help you refine the fundamental
+skills, and better understand the theoretical underpinnings, that you
+will need in order to do well on the labs and exams. Grading for these
+assignments is based on the correctness of your answer, and the
+presentation of your reasoning. You should strive for clarity and
+conciseness, while making sure to show each step of your
+reasoning. Categorical answers with no explanation will not even
+receive partial credit, but lucid explanations of your attempt to find
+the answer will.
+</p>
+
+<p>
+Written homework will be handed in in PDF format via teams, and should
+preferably be typeset in LaTeX.
+</p>
+</div>
+</div>
+<div id="outline-container-org3aa63c7" class="outline-4">
+<h4 id="org3aa63c7">Programming Homework:</h4>
+<div class="outline-text-4" id="text-org3aa63c7">
+<p>
+The programming homework is designed to give you hands-on experience
+writing bug-free code with the help of formal verification tools. In
+general, we will ask you to implement some interesting functionality,
+such as a SAT solver or fault-tolerant communication protocol. The
+most important criterion with respect to grading programs is
+correctness.
+</p>
+
+<p>
+Programming Homework will be send in a Unix compressed archive
+<code>name.tgz</code>. Your archive must include a <code>README</code> file describing how
+to compile and run your program. It must also include a short report
+(2 pages max.) describing the salient parts of your code.
+</p>
+</div>
+</div>
+<div id="outline-container-orgebd6437" class="outline-4">
+<h4 id="orgebd6437">Academic Integrity</h4>
+<div class="outline-text-4" id="text-orgebd6437">
+<p>
+Students are expected to complete each assignment on their own, and
+should be able to explain all of the work that they hand in. Copying
+code or proof material from other students, from online sources, or
+from prior instances of this course is not allowed. However, you are
+encouraged to discuss assignments with each other at a sufficiently
+high level to avoid the risk of duplicating implementation or
+proof. Examples of this would be discussing algorithms and properties
+referred to in the assignment, helping other students with questions
+about a programming language or tool required to complete the
+assignment, discussing a general proof technique, or referring to an
+online source with useful information. Similarly, you may consult
+online sources, tutorials, and public libraries. If you find
+specifically helpful material it is critical that you (a) do not copy
+the code or proof, but study it as a guide and then do your own work,
+and (b) cite the source with your classmates' names, suitable URLs and
+chat prompts (if you use any generative AIs) in your solution. If you
+have questions about whether something might be permissible, contact
+the course staff before you proceed.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf8da041" class="outline-3">
+<h3 id="orgf8da041">Mid-terms (20 %)</h3>
+<div class="outline-text-3" id="text-orgf8da041">
+<p>
+TBA
+</p>
+</div>
+</div>
+<div id="outline-container-org2ca4dbc" class="outline-3">
+<h3 id="org2ca4dbc">Final Project (20 %)</h3>
+<div class="outline-text-3" id="text-org2ca4dbc">
+<p>
+TBA
+</p>
+</div>
+</div>
+<div id="outline-container-orgb593f47" class="outline-3">
+<h3 id="orgb593f47">Attendance (10 %)</h3>
+<div class="outline-text-3" id="text-orgb593f47">
+<p>
+All students are expected to attend the lectures. However I appreciate
+that different people learn differently. Thus the attendance won't be
+recorded.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeb3486f" class="outline-2">
+<h2 id="orgeb3486f">Some tools you may be interested in</h2>
+<div class="outline-text-2" id="text-orgeb3486f">
+</div>
+<div id="outline-container-orgf0a3bb5" class="outline-3">
+<h3 id="orgf0a3bb5">Proof Assistant</h3>
+<div class="outline-text-3" id="text-orgf0a3bb5">
+<ul class="org-ul">
+<li><a href="https://coq.inria.fr/">Coq</a> (<a href="https://softwarefoundations.cis.upenn.edu/lf-current/toc.html">introduction to the language</a>)</li>
+<li><a href="https://leanprover.github.io/">Lean</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6f35059" class="outline-3">
+<h3 id="org6f35059">LaTeX</h3>
+<div class="outline-text-3" id="text-org6f35059">
+<ul class="org-ul">
+<li><a href="https://www.logicmatters.net/latex-for-logicians/">LaTeX for Logicians</a></li>
+<li><a href="http://pauillac.inria.fr/~remy/latex/mathpartir.html">mathpar</a> There are many options for typesetting inference rules and
+derivation rules in LaTeX. We recommend <code>mathpar</code> which is included
+with most TeX distributions.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5a149d5" class="outline-3">
+<h3 id="org5a149d5">Others</h3>
+<div class="outline-text-3" id="text-org5a149d5">
+<ul class="org-ul">
+<li><a href="https://github.com/ligurio/practical-fm">A List of companies that use formal verification methods in software engineering</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcb98352" class="outline-2">
+<h2 id="orgcb98352">Acknowledgement and  Credits</h2>
+<div class="outline-text-2" id="text-orgcb98352">
+<p>
+The course is designed based on the
+<a href="https://homepage.iis.sinica.edu.tw/~bywang/courses/comp-logic/">Introduction
+to Computational Logic</a> by
+<a href="https://homepage.iis.sinica.edu.tw/~bywang/">Bow-Yaw Wang</a>. I thank
+him for providing his teaching materials including source code of
+slides.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2024-06-24 Mon 23:29</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
