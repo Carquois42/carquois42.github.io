@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-09-03 Tue 22:00 -->
+<!-- 2024-09-09 Mon 17:48 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Compilers</title>
@@ -22,42 +22,42 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgd1a94dd">General Infromation</a>
+<li><a href="#org071ea7e">General Infromation</a>
 <ul>
-<li><a href="#org99bf7ee">Credit</a></li>
-<li><a href="#org82bb3b8">Overviews</a></li>
-<li><a href="#org1ca1c6f">Course objectives</a></li>
-<li><a href="#org0088195">Recommended Prerequisites</a></li>
-<li><a href="#orgdf38a04">Communication</a></li>
-<li><a href="#orga24f1d7">Office Hours</a></li>
+<li><a href="#org0e22abe">Credit</a></li>
+<li><a href="#orge14f2c6">Overviews</a></li>
+<li><a href="#orgde22241">Course objectives</a></li>
+<li><a href="#orgbb2eb23">Recommended Prerequisites</a></li>
+<li><a href="#org8eeeada">Communication</a></li>
+<li><a href="#org36a9f68">Office Hours</a></li>
 </ul>
 </li>
-<li><a href="#org1beabd6">Topics and Class Schedule</a>
+<li><a href="#org16c9b7e">Topics and Class Schedule</a>
 <ul>
-<li><a href="#orgba7ad46">Topics</a></li>
-<li><a href="#orgb72303f">Class Schedule</a></li>
+<li><a href="#org9d89b86">Topics</a></li>
+<li><a href="#org9fa8a7e">Class Schedule</a></li>
 </ul>
 </li>
-<li><a href="#org4100eec">Useful References</a></li>
-<li><a href="#orgc6ee84b">Evalution</a>
+<li><a href="#org2399ec6">Useful References</a></li>
+<li><a href="#org1dc5a04">Evalution</a>
 <ul>
-<li><a href="#org655ae6a">Asseignments (50 %)</a></li>
-<li><a href="#org5c1084c">Final Project (50 %)</a></li>
+<li><a href="#org04ffb8d">Asseignments (50 %)</a></li>
+<li><a href="#orgf3210e4">Final Project (50 %)</a></li>
 </ul>
 </li>
-<li><a href="#orgcca2f7c">Some Useful Resources</a>
+<li><a href="#org58f3c1c">Some Useful Resources</a>
 <ul>
-<li><a href="#org12d3849">OCaml</a></li>
-<li><a href="#org7de0df8">Assembly x86-64</a></li>
+<li><a href="#orgcbc61d9">OCaml</a></li>
+<li><a href="#org6be10a0">Assembly x86-64</a></li>
 </ul>
 </li>
-<li><a href="#orgb9decef">Acknowledgement and Credits</a></li>
+<li><a href="#org426ae99">Acknowledgement and Credits</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd1a94dd" class="outline-2">
-<h2 id="orgd1a94dd">General Infromation</h2>
-<div class="outline-text-2" id="text-orgd1a94dd">
+<div id="outline-container-org071ea7e" class="outline-2">
+<h2 id="org071ea7e">General Infromation</h2>
+<div class="outline-text-2" id="text-org071ea7e">
 <p>
 <b>Courese Number</b>: 337883<br />
 <b>Instructor</b>: Jyun-Ao Lin<br />
@@ -65,18 +65,18 @@
 <b>Time</b>: 13:10 &#x2013; 15:00, Tuesday; 15:10 &#x2013; 16:00, Friday
 </p>
 </div>
-<div id="outline-container-org99bf7ee" class="outline-3">
-<h3 id="org99bf7ee">Credit</h3>
-<div class="outline-text-3" id="text-org99bf7ee">
+<div id="outline-container-org0e22abe" class="outline-3">
+<h3 id="org0e22abe">Credit</h3>
+<div class="outline-text-3" id="text-org0e22abe">
 <p>
 A large part of the course is designed based on Prof. Jean-Christophe
 Filli&acirc;tre's compiler course at ENS.
 </p>
 </div>
 </div>
-<div id="outline-container-org82bb3b8" class="outline-3">
-<h3 id="org82bb3b8">Overviews</h3>
-<div class="outline-text-3" id="text-org82bb3b8">
+<div id="outline-container-orge14f2c6" class="outline-3">
+<h3 id="orge14f2c6">Overviews</h3>
+<div class="outline-text-3" id="text-orge14f2c6">
 <p>
 This course is an introduction to the compilation. We will explain the
 techniques and tools used in different phases of a compiler, up to the
@@ -86,9 +86,9 @@ course.
 </p>
 </div>
 </div>
-<div id="outline-container-org1ca1c6f" class="outline-3">
-<h3 id="org1ca1c6f">Course objectives</h3>
-<div class="outline-text-3" id="text-org1ca1c6f">
+<div id="outline-container-orgde22241" class="outline-3">
+<h3 id="orgde22241">Course objectives</h3>
+<div class="outline-text-3" id="text-orgde22241">
 <ul class="org-ul">
 <li>understand the mechanisms behind <b>compilation</b></li>
 <li>understand the various aspects of <b>programming languages</b> via their
@@ -96,18 +96,18 @@ compilations</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org0088195" class="outline-3">
-<h3 id="org0088195">Recommended Prerequisites</h3>
-<div class="outline-text-3" id="text-org0088195">
+<div id="outline-container-orgbb2eb23" class="outline-3">
+<h3 id="orgbb2eb23">Recommended Prerequisites</h3>
+<div class="outline-text-3" id="text-orgbb2eb23">
 <p>
 Some basic discrete mathematics, computer programming, algorithms,
 theory of computation.
 </p>
 </div>
 </div>
-<div id="outline-container-orgdf38a04" class="outline-3">
-<h3 id="orgdf38a04">Communication</h3>
-<div class="outline-text-3" id="text-orgdf38a04">
+<div id="outline-container-org8eeeada" class="outline-3">
+<h3 id="org8eeeada">Communication</h3>
+<div class="outline-text-3" id="text-org8eeeada">
 <p>
 When you need help from the course staff, please use office hours or
 hang around after lecture. For issues requiring privacy, please feel
@@ -115,22 +115,22 @@ free to email the course instructor.
 </p>
 </div>
 </div>
-<div id="outline-container-orga24f1d7" class="outline-3">
-<h3 id="orga24f1d7">Office Hours</h3>
-<div class="outline-text-3" id="text-orga24f1d7">
+<div id="outline-container-org36a9f68" class="outline-3">
+<h3 id="org36a9f68">Office Hours</h3>
+<div class="outline-text-3" id="text-org36a9f68">
 <p>
-TBA
+tue 15:10 &#x2013; 17:10 &amp; fri 13:00 &#x2013; 15:00
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org1beabd6" class="outline-2">
-<h2 id="org1beabd6">Topics and Class Schedule</h2>
-<div class="outline-text-2" id="text-org1beabd6">
+<div id="outline-container-org16c9b7e" class="outline-2">
+<h2 id="org16c9b7e">Topics and Class Schedule</h2>
+<div class="outline-text-2" id="text-org16c9b7e">
 </div>
-<div id="outline-container-orgba7ad46" class="outline-3">
-<h3 id="orgba7ad46">Topics</h3>
-<div class="outline-text-3" id="text-orgba7ad46">
+<div id="outline-container-org9d89b86" class="outline-3">
+<h3 id="org9d89b86">Topics</h3>
+<div class="outline-text-3" id="text-org9d89b86">
 <ul class="org-ul">
 <li>x86-64 Assembly Language</li>
 <li>Syntax, Semantics and Interpreter in OCaml</li>
@@ -145,9 +145,9 @@ TBA
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb72303f" class="outline-3">
-<h3 id="orgb72303f">Class Schedule</h3>
-<div class="outline-text-3" id="text-orgb72303f">
+<div id="outline-container-org9fa8a7e" class="outline-3">
+<h3 id="org9fa8a7e">Class Schedule</h3>
+<div class="outline-text-3" id="text-org9fa8a7e">
 <p>
 The current schedule is tentative and subject to change.
 </p>
@@ -180,7 +180,7 @@ The current schedule is tentative and subject to change.
 <td class="org-left">09/10 &#x2013; 09/13</td>
 <td class="org-right">1</td>
 <td class="org-left">Introduction</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_abe027/Eb_iBmnL3TFNlqODIUw_gAUBF_Xb4qc1q3c41pNVLmeE0A?e=tdacrt">handout</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
@@ -324,9 +324,9 @@ The current schedule is tentative and subject to change.
 </div>
 </div>
 </div>
-<div id="outline-container-org4100eec" class="outline-2">
-<h2 id="org4100eec">Useful References</h2>
-<div class="outline-text-2" id="text-org4100eec">
+<div id="outline-container-org2399ec6" class="outline-2">
+<h2 id="org2399ec6">Useful References</h2>
+<div class="outline-text-2" id="text-org2399ec6">
 <ul class="org-ul">
 <li>[dragon] Alfred V. Aho, Monica S. Lam, Ravi Sethi et Jeffrey
 D. Ullman, <a href="https://suif.stanford.edu/dragonbook/">Modern Compilers: Principles, Techniques, and Tools</a>.</li>
@@ -337,24 +337,24 @@ Programmer's Perspective</a>.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc6ee84b" class="outline-2">
-<h2 id="orgc6ee84b">Evalution</h2>
-<div class="outline-text-2" id="text-orgc6ee84b">
+<div id="outline-container-org1dc5a04" class="outline-2">
+<h2 id="org1dc5a04">Evalution</h2>
+<div class="outline-text-2" id="text-org1dc5a04">
 </div>
-<div id="outline-container-org655ae6a" class="outline-3">
-<h3 id="org655ae6a">Asseignments (50 %)</h3>
+<div id="outline-container-org04ffb8d" class="outline-3">
+<h3 id="org04ffb8d">Asseignments (50 %)</h3>
 </div>
-<div id="outline-container-org5c1084c" class="outline-3">
-<h3 id="org5c1084c">Final Project (50 %)</h3>
+<div id="outline-container-orgf3210e4" class="outline-3">
+<h3 id="orgf3210e4">Final Project (50 %)</h3>
 </div>
 </div>
-<div id="outline-container-orgcca2f7c" class="outline-2">
-<h2 id="orgcca2f7c">Some Useful Resources</h2>
-<div class="outline-text-2" id="text-orgcca2f7c">
+<div id="outline-container-org58f3c1c" class="outline-2">
+<h2 id="org58f3c1c">Some Useful Resources</h2>
+<div class="outline-text-2" id="text-org58f3c1c">
 </div>
-<div id="outline-container-org12d3849" class="outline-3">
-<h3 id="org12d3849">OCaml</h3>
-<div class="outline-text-3" id="text-org12d3849">
+<div id="outline-container-orgcbc61d9" class="outline-3">
+<h3 id="orgcbc61d9">OCaml</h3>
+<div class="outline-text-3" id="text-orgcbc61d9">
 <ul class="org-ul">
 <li>Besides OCaml compiler, you will also need <a href="https://ocaml.org/manual/5.2/lexyacc.html"><code>ocamllex</code></a> and <a href="http://gallium.inria.fr/~fpottier/menhir/"><code>menhir</code></a></li>
 <li><a href="http://ocaml.org/">OCaml.org</a> very rich</li>
@@ -364,9 +364,9 @@ Programmer's Perspective</a>.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7de0df8" class="outline-3">
-<h3 id="org7de0df8">Assembly x86-64</h3>
-<div class="outline-text-3" id="text-org7de0df8">
+<div id="outline-container-org6be10a0" class="outline-3">
+<h3 id="org6be10a0">Assembly x86-64</h3>
+<div class="outline-text-3" id="text-org6be10a0">
 <ul class="org-ul">
 <li><a href="http://web.cecs.pdx.edu/~apt/cs491/x86-64.html">The webpage of Andrew Tolmach</a>, in particular these <a href="http://www.lri.fr/~filliatr/ens/compil/x86-64.pdf">notes</a>.</li>
 <li><a href="https://www.cs.cmu.edu/~fp/courses/15213-s07/misc/asm64-handout.pdf">x86-64 Machine-Level Programming</a> of Randal E. Bryant and David
@@ -378,9 +378,9 @@ by different compilers</li>
 </div>
 </div>
 </div>
-<div id="outline-container-orgb9decef" class="outline-2">
-<h2 id="orgb9decef">Acknowledgement and Credits</h2>
-<div class="outline-text-2" id="text-orgb9decef">
+<div id="outline-container-org426ae99" class="outline-2">
+<h2 id="org426ae99">Acknowledgement and Credits</h2>
+<div class="outline-text-2" id="text-org426ae99">
 <p>
 The course is designed based on Prof. Jean-Christophe
 Filli&acirc;tre's course.
@@ -389,7 +389,7 @@ Filli&acirc;tre's course.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2024-09-03 Tue 22:00</p>
+<p class="date">Created: 2024-09-09 Mon 17:48</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
