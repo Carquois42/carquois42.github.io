@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-11-20 Wed 22:33 -->
+<!-- 2024-11-27 Wed 22:08 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Formal Language</title>
@@ -56,49 +56,49 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5ed0f63">General Infromation</a>
+<li><a href="#orgcc236b0">General Infromation</a>
 <ul>
-<li><a href="#org90d6d13">Overviews</a></li>
-<li><a href="#org1d1d46c">Recommended Prerequisites</a></li>
-<li><a href="#org7258ce5">Communication</a></li>
-<li><a href="#orgbb48246">Learning Objectives</a></li>
+<li><a href="#org7c1ecfa">Overviews</a></li>
+<li><a href="#org9729202">Recommended Prerequisites</a></li>
+<li><a href="#orgd6adabf">Communication</a></li>
+<li><a href="#org33057dc">Learning Objectives</a></li>
 </ul>
 </li>
-<li><a href="#org7b9a40f">Topics and Class Schedule</a>
+<li><a href="#org8de9242">Topics and Class Schedule</a>
 <ul>
-<li><a href="#orgfb4eca9">Topics</a>
+<li><a href="#org24fad81">Topics</a>
 <ul>
-<li><a href="#org1436bb3">Finite State Automata and Regular Languages</a></li>
-<li><a href="#orgd7b98a1">Pushdown Automata and Context-Free Languages</a></li>
-<li><a href="#orgf9734c6">Turing Machine</a></li>
-<li><a href="#orge70e7e0">Complexity Classes</a></li>
-<li><a href="#org9efe405">Model Checking</a></li>
+<li><a href="#org20779f8">Finite State Automata and Regular Languages</a></li>
+<li><a href="#orgf74a9a9">Pushdown Automata and Context-Free Languages</a></li>
+<li><a href="#org1a3ba23">Turing Machine</a></li>
+<li><a href="#org4268d4e">Complexity Classes</a></li>
+<li><a href="#org1a52678">Model Checking</a></li>
 </ul>
 </li>
-<li><a href="#orga86a55d">Class Schedule</a></li>
+<li><a href="#orgcf3c28f">Class Schedule</a></li>
 </ul>
 </li>
-<li><a href="#org10eee1b">Useful References</a></li>
-<li><a href="#orgefc1a40">Evalution</a>
+<li><a href="#org62f881e">Useful References</a></li>
+<li><a href="#org0914d4e">Evalution</a>
 <ul>
-<li><a href="#org632a439">Asseignments (50 %)</a>
+<li><a href="#orgce0843f">Asseignments (50 %)</a>
 <ul>
-<li><a href="#org7e43225">Written Homework:</a></li>
-<li><a href="#orge806dd4">Academic Integrity</a></li>
-<li><a href="#org457b07e">Late Assignments</a></li>
+<li><a href="#org59afa06">Written Homework:</a></li>
+<li><a href="#orgaed33a4">Academic Integrity</a></li>
+<li><a href="#org25a625e">Late Assignments</a></li>
 </ul>
 </li>
-<li><a href="#orgdc9b224">Mid-terms (20 %)</a></li>
-<li><a href="#orga0da9bc">Final Project (30 %)</a></li>
+<li><a href="#org68ae15a">Mid-terms (20 %)</a></li>
+<li><a href="#org4309c1b">Final Project (30 %)</a></li>
 </ul>
 </li>
-<li><a href="#org27b44a7">Credits</a></li>
+<li><a href="#org941ad9a">Credits</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5ed0f63" class="outline-2">
-<h2 id="org5ed0f63">General Infromation</h2>
-<div class="outline-text-2" id="text-org5ed0f63">
+<div id="outline-container-orgcc236b0" class="outline-2">
+<h2 id="orgcc236b0">General Infromation</h2>
+<div class="outline-text-2" id="text-orgcc236b0">
 <p>
 <b>Course Number</b>: 332321/336152<br />
 <b>Instructor</b>: Jyun-Ao Lin<br />
@@ -107,9 +107,9 @@
 <b>Office hour</b>: 15:10 &#x2013; 17:10, tue and 13:00 &#x2013; 15:00, fri
 </p>
 </div>
-<div id="outline-container-org90d6d13" class="outline-3">
-<h3 id="org90d6d13">Overviews</h3>
-<div class="outline-text-3" id="text-org90d6d13">
+<div id="outline-container-org7c1ecfa" class="outline-3">
+<h3 id="org7c1ecfa">Overviews</h3>
+<div class="outline-text-3" id="text-org7c1ecfa">
 <p>
 This course explores the mathematical foundations of computation. How
 do we quantify computational power? Are there limits on the kinds of
@@ -119,17 +119,17 @@ linguistics.
 </p>
 </div>
 </div>
-<div id="outline-container-org1d1d46c" class="outline-3">
-<h3 id="org1d1d46c">Recommended Prerequisites</h3>
-<div class="outline-text-3" id="text-org1d1d46c">
+<div id="outline-container-org9729202" class="outline-3">
+<h3 id="org9729202">Recommended Prerequisites</h3>
+<div class="outline-text-3" id="text-org9729202">
 <p>
 Some basic discrete mathematics, algorithms and theory of computation.
 </p>
 </div>
 </div>
-<div id="outline-container-org7258ce5" class="outline-3">
-<h3 id="org7258ce5">Communication</h3>
-<div class="outline-text-3" id="text-org7258ce5">
+<div id="outline-container-orgd6adabf" class="outline-3">
+<h3 id="orgd6adabf">Communication</h3>
+<div class="outline-text-3" id="text-orgd6adabf">
 <p>
 When you need help from the course staff, please use office hours or
 hang around after lecture. For issues requiring privacy, please feel
@@ -137,9 +137,9 @@ free to email the course instructor.
 </p>
 </div>
 </div>
-<div id="outline-container-orgbb48246" class="outline-3">
-<h3 id="orgbb48246">Learning Objectives</h3>
-<div class="outline-text-3" id="text-orgbb48246">
+<div id="outline-container-org33057dc" class="outline-3">
+<h3 id="org33057dc">Learning Objectives</h3>
+<div class="outline-text-3" id="text-org33057dc">
 <ul class="org-ul">
 <li>Describe how computation can be modeled mathematically.</li>
 <li>Describe how computational problems can be described as formal
@@ -152,17 +152,17 @@ representations.</li>
 </div>
 </div>
 </div>
-<div id="outline-container-org7b9a40f" class="outline-2">
-<h2 id="org7b9a40f">Topics and Class Schedule</h2>
-<div class="outline-text-2" id="text-org7b9a40f">
+<div id="outline-container-org8de9242" class="outline-2">
+<h2 id="org8de9242">Topics and Class Schedule</h2>
+<div class="outline-text-2" id="text-org8de9242">
 </div>
-<div id="outline-container-orgfb4eca9" class="outline-3">
-<h3 id="orgfb4eca9">Topics</h3>
-<div class="outline-text-3" id="text-orgfb4eca9">
+<div id="outline-container-org24fad81" class="outline-3">
+<h3 id="org24fad81">Topics</h3>
+<div class="outline-text-3" id="text-org24fad81">
 </div>
-<div id="outline-container-org1436bb3" class="outline-4">
-<h4 id="org1436bb3">Finite State Automata and Regular Languages</h4>
-<div class="outline-text-4" id="text-org1436bb3">
+<div id="outline-container-org20779f8" class="outline-4">
+<h4 id="org20779f8">Finite State Automata and Regular Languages</h4>
+<div class="outline-text-4" id="text-org20779f8">
 <p>
 <b>Deterministic finite automata</b>: Transition Diagrams, Language of an
 automation, Nondeterministic finite automata, Subset construction,
@@ -183,9 +183,9 @@ Minimizing DFA
 </p>
 </div>
 </div>
-<div id="outline-container-orgd7b98a1" class="outline-4">
-<h4 id="orgd7b98a1">Pushdown Automata and Context-Free Languages</h4>
-<div class="outline-text-4" id="text-orgd7b98a1">
+<div id="outline-container-orgf74a9a9" class="outline-4">
+<h4 id="orgf74a9a9">Pushdown Automata and Context-Free Languages</h4>
+<div class="outline-text-4" id="text-orgf74a9a9">
 <p>
 <b>Context-free grammars</b>: Derivations and languages, Leftmost and
 rightmost derivations, Sentential forms, Parse trees, Equivalence of
@@ -207,9 +207,9 @@ Testing membership in a CFL.
 </p>
 </div>
 </div>
-<div id="outline-container-orgf9734c6" class="outline-4">
-<h4 id="orgf9734c6">Turing Machine</h4>
-<div class="outline-text-4" id="text-orgf9734c6">
+<div id="outline-container-org1a3ba23" class="outline-4">
+<h4 id="org1a3ba23">Turing Machine</h4>
+<div class="outline-text-4" id="text-org1a3ba23">
 <p>
 <b>Turing machine and decidable languages</b>: The Turing machine,
 Acceptance by a Turing machine, Recursively enumerable languages,
@@ -227,9 +227,9 @@ theorem, Post's correspondence problem, Undecidable CFL problems.
 </p>
 </div>
 </div>
-<div id="outline-container-orge70e7e0" class="outline-4">
-<h4 id="orge70e7e0">Complexity Classes</h4>
-<div class="outline-text-4" id="text-orge70e7e0">
+<div id="outline-container-org4268d4e" class="outline-4">
+<h4 id="org4268d4e">Complexity Classes</h4>
+<div class="outline-text-4" id="text-org4268d4e">
 <p>
 <b>Intractable problems</b>: The class P and NP, The P=NP questions,
 Polynomial-Time reductions, NP-complete problem, NP-Complete
@@ -237,9 +237,9 @@ satisfiability problems, Other NP-Complete problem.
 </p>
 </div>
 </div>
-<div id="outline-container-org9efe405" class="outline-4">
-<h4 id="org9efe405">Model Checking</h4>
-<div class="outline-text-4" id="text-org9efe405">
+<div id="outline-container-org1a52678" class="outline-4">
+<h4 id="org1a52678">Model Checking</h4>
+<div class="outline-text-4" id="text-org1a52678">
 <p>
 <b>Transition systems</b>: Kripke system
 <b>Temporal logics</b>: LTL, CTL, CTL*
@@ -248,9 +248,9 @@ satisfiability problems, Other NP-Complete problem.
 </div>
 </div>
 </div>
-<div id="outline-container-orga86a55d" class="outline-3">
-<h3 id="orga86a55d">Class Schedule</h3>
-<div class="outline-text-3" id="text-orga86a55d">
+<div id="outline-container-orgcf3c28f" class="outline-3">
+<h3 id="orgcf3c28f">Class Schedule</h3>
+<div class="outline-text-3" id="text-orgcf3c28f">
 <p>
 The current schedule is tentative and subject to change.
 </p>
@@ -370,9 +370,9 @@ The current schedule is tentative and subject to change.
 <tr>
 <td class="org-left">11/28</td>
 <td class="org-right">12</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Context-free grammar</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_a06ed4/EbNYylBWt5ZLqaQ0MSqgDF8B_wKjLqmmoUfR1RNUQWzcDQ?e=ANxgrm">handout</a></td>
+<td class="org-left">[Hop] chap. 5</td>
 </tr>
 
 <tr>
@@ -427,9 +427,9 @@ The current schedule is tentative and subject to change.
 </div>
 </div>
 </div>
-<div id="outline-container-org10eee1b" class="outline-2">
-<h2 id="org10eee1b">Useful References</h2>
-<div class="outline-text-2" id="text-org10eee1b">
+<div id="outline-container-org62f881e" class="outline-2">
+<h2 id="org62f881e">Useful References</h2>
+<div class="outline-text-2" id="text-org62f881e">
 <ul class="org-ul">
 <li>[Si] M. Sipser, <i>Introduction to the Theory of Computation</i></li>
 <li>[Hop] John Hopcroft and Jeffrey Ullman, <i>Introduction to Automata
@@ -441,17 +441,17 @@ MIT Press.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgefc1a40" class="outline-2">
-<h2 id="orgefc1a40">Evalution</h2>
-<div class="outline-text-2" id="text-orgefc1a40">
+<div id="outline-container-org0914d4e" class="outline-2">
+<h2 id="org0914d4e">Evalution</h2>
+<div class="outline-text-2" id="text-org0914d4e">
 </div>
-<div id="outline-container-org632a439" class="outline-3">
-<h3 id="org632a439">Asseignments (50 %)</h3>
-<div class="outline-text-3" id="text-org632a439">
+<div id="outline-container-orgce0843f" class="outline-3">
+<h3 id="orgce0843f">Asseignments (50 %)</h3>
+<div class="outline-text-3" id="text-orgce0843f">
 </div>
-<div id="outline-container-org7e43225" class="outline-4">
-<h4 id="org7e43225">Written Homework:</h4>
-<div class="outline-text-4" id="text-org7e43225">
+<div id="outline-container-org59afa06" class="outline-4">
+<h4 id="org59afa06">Written Homework:</h4>
+<div class="outline-text-4" id="text-org59afa06">
 <p>
 The goal of the written homework is to help you refine the fundamental
 skills, and better understand the theoretical underpinnings, that you
@@ -470,9 +470,9 @@ should preferably be typeset in LaTeX.
 </p>
 </div>
 </div>
-<div id="outline-container-orge806dd4" class="outline-4">
-<h4 id="orge806dd4">Academic Integrity</h4>
-<div class="outline-text-4" id="text-orge806dd4">
+<div id="outline-container-orgaed33a4" class="outline-4">
+<h4 id="orgaed33a4">Academic Integrity</h4>
+<div class="outline-text-4" id="text-orgaed33a4">
 <p>
 Students are expected to complete each assignment on their own, and
 should be able to explain all of the work that they hand in. Copying
@@ -493,9 +493,9 @@ before you proceed.
 </p>
 </div>
 </div>
-<div id="outline-container-org457b07e" class="outline-4">
-<h4 id="org457b07e">Late Assignments</h4>
-<div class="outline-text-4" id="text-org457b07e">
+<div id="outline-container-org25a625e" class="outline-4">
+<h4 id="org25a625e">Late Assignments</h4>
+<div class="outline-text-4" id="text-org25a625e">
 <p>
 You will have a total of 5 late days to use throughout the semester,
 but you may use at most 2 for any given assignment. Due to grade
@@ -505,19 +505,19 @@ specific assignment, which will be announced when the are released.
 </div>
 </div>
 </div>
-<div id="outline-container-orgdc9b224" class="outline-3">
-<h3 id="orgdc9b224">Mid-terms (20 %)</h3>
+<div id="outline-container-org68ae15a" class="outline-3">
+<h3 id="org68ae15a">Mid-terms (20 %)</h3>
 </div>
-<div id="outline-container-orga0da9bc" class="outline-3">
-<h3 id="orga0da9bc">Final Project (30 %)</h3>
+<div id="outline-container-org4309c1b" class="outline-3">
+<h3 id="org4309c1b">Final Project (30 %)</h3>
 </div>
 </div>
-<div id="outline-container-org27b44a7" class="outline-2">
-<h2 id="org27b44a7">Credits</h2>
+<div id="outline-container-org941ad9a" class="outline-2">
+<h2 id="org941ad9a">Credits</h2>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2024-11-20 Wed 22:33</p>
+<p class="date">Created: 2024-11-27 Wed 22:08</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
