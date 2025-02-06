@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-02-06 Thu 20:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Compilers</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="src/readtheorg_theme/css/search.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/search.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Compilers</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgc66076c">General Infromation</a>
+<ul>
+<li><a href="#orgcf3fcb9">Credit</a></li>
+<li><a href="#orga856238">Overviews</a></li>
+<li><a href="#org08e4105">Course objectives</a></li>
+<li><a href="#orgd0a1d78">Recommended Prerequisites</a></li>
+<li><a href="#org495aa41">Communication</a></li>
+<li><a href="#org532edb0">Office Hours</a></li>
+</ul>
+</li>
+<li><a href="#orgf1a3c99">Topics and Class Schedule</a>
+<ul>
+<li><a href="#org6ec5a42">Topics</a></li>
+<li><a href="#orgf687a2a">Class Schedule</a></li>
+</ul>
+</li>
+<li><a href="#org5af0da7">Useful References</a></li>
+<li><a href="#org2a606ef">Evalution</a>
+<ul>
+<li><a href="#org8f25af8">Asseignments (50 %)</a></li>
+<li><a href="#org513a68e">Final Project (50 %)</a></li>
+</ul>
+</li>
+<li><a href="#org5d1ecef">Some Useful Resources</a>
+<ul>
+<li><a href="#org6349dd9">OCaml</a></li>
+<li><a href="#org9975a8f">Assembly x86-64</a></li>
+</ul>
+</li>
+<li><a href="#orgb0622f5">Acknowledgement and Credits</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc66076c" class="outline-2">
+<h2 id="orgc66076c">General Infromation</h2>
+<div class="outline-text-2" id="text-orgc66076c">
+<p>
+<b>Courese Number</b>: 337883<br />
+<b>Instructor</b>: Jyun-Ao Lin<br />
+<b>Location</b>: 第三教學大樓 506(e)<br />
+<b>Time</b>: 13:10 &#x2013; 15:00, Tuesday; 15:10 &#x2013; 16:00, Friday
+</p>
+</div>
+<div id="outline-container-orgcf3fcb9" class="outline-3">
+<h3 id="orgcf3fcb9">Credit</h3>
+<div class="outline-text-3" id="text-orgcf3fcb9">
+<p>
+A large part of the course is designed based on Prof. Jean-Christophe
+Filli&acirc;tre's compiler course at ENS.
+</p>
+</div>
+</div>
+<div id="outline-container-orga856238" class="outline-3">
+<h3 id="orga856238">Overviews</h3>
+<div class="outline-text-3" id="text-orga856238">
+<p>
+This course is an introduction to the compilation. We will explain the
+techniques and tools used in different phases of a compiler, up to the
+production of optimized assembly code. A compiler for a fragment of
+the Python language to the x86-64 assembly will be made during the
+course.
+</p>
+</div>
+</div>
+<div id="outline-container-org08e4105" class="outline-3">
+<h3 id="org08e4105">Course objectives</h3>
+<div class="outline-text-3" id="text-org08e4105">
+<ul class="org-ul">
+<li>understand the mechanisms behind <b>compilation</b></li>
+<li>understand the various aspects of <b>programming languages</b> via their
+compilations</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd0a1d78" class="outline-3">
+<h3 id="orgd0a1d78">Recommended Prerequisites</h3>
+<div class="outline-text-3" id="text-orgd0a1d78">
+<p>
+Some basic discrete mathematics, computer programming, algorithms,
+theory of computation.
+</p>
+</div>
+</div>
+<div id="outline-container-org495aa41" class="outline-3">
+<h3 id="org495aa41">Communication</h3>
+<div class="outline-text-3" id="text-org495aa41">
+<p>
+When you need help from the course staff, please use office hours or
+hang around after lecture. For issues requiring privacy, please feel
+free to email the course instructor.
+</p>
+</div>
+</div>
+<div id="outline-container-org532edb0" class="outline-3">
+<h3 id="org532edb0">Office Hours</h3>
+<div class="outline-text-3" id="text-org532edb0">
+<p>
+tue 15:10 &#x2013; 17:10 &amp; fri 13:00 &#x2013; 15:00
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf1a3c99" class="outline-2">
+<h2 id="orgf1a3c99">Topics and Class Schedule</h2>
+<div class="outline-text-2" id="text-orgf1a3c99">
+</div>
+<div id="outline-container-org6ec5a42" class="outline-3">
+<h3 id="org6ec5a42">Topics</h3>
+<div class="outline-text-3" id="text-org6ec5a42">
+<ul class="org-ul">
+<li>x86-64 Assembly Language</li>
+<li>Syntax, Semantics and Interpreter in OCaml</li>
+<li>Lexical Analysis</li>
+<li>Parsing: Syntax Analysis</li>
+<li>Static Typing</li>
+<li>Parameter Passing</li>
+<li>Compiler of Functional Language</li>
+<li>Compiler of Object-Oriented Language</li>
+<li>Optimizing Compiler</li>
+<li>Memory Allocation</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf687a2a" class="outline-3">
+<h3 id="orgf687a2a">Class Schedule</h3>
+<div class="outline-text-3" id="text-orgf687a2a">
+<p>
+The current schedule is tentative and subject to change.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Date</th>
+<th scope="col" class="org-right">#</th>
+<th scope="col" class="org-left">Lecture</th>
+<th scope="col" class="org-left">Support</th>
+<th scope="col" class="org-left">related materials</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">09/10 &#x2013; 09/13</td>
+<td class="org-right">1</td>
+<td class="org-left">Introduction</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_abe027/Eb_iBmnL3TFNlqODIUw_gAUBF_Xb4qc1q3c41pNVLmeE0A?e=tdacrt">handout</a></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">09/17 &#x2013; 09/20</td>
+<td class="org-right">2</td>
+<td class="org-left">tue: Holiday/ x86-64 Assembly</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_abe027/ER-_SIv-5YtPqVx2R5j-k4oBZPTamKcXuPVCdJXei4RpBg?e=ITKikx">handout</a></td>
+<td class="org-left">[CSA] Chap. 3 &amp; resources of assembly listed below</td>
+</tr>
+
+<tr>
+<td class="org-left">09/23 &#x2013; 09/27</td>
+<td class="org-right">3</td>
+<td class="org-left">x86-64 Assembly (cont.)</td>
+<td class="org-left">same</td>
+<td class="org-left">same as above</td>
+</tr>
+
+<tr>
+<td class="org-left">10/01 &#x2013; 10/04</td>
+<td class="org-right">4</td>
+<td class="org-left">abstract syntax, semantics</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_abe027/EY3i_aVmLTJOpE0p90xV42UBElhlpoqD8oL19tsnWspHjw?e=M1rouP">handout</a></td>
+<td class="org-left">[pierce] Chap. 3,4,5</td>
+</tr>
+
+<tr>
+<td class="org-left">10/08 &#x2013; 10/11</td>
+<td class="org-right">5</td>
+<td class="org-left">interpreter, fri: Holiday</td>
+<td class="org-left">same</td>
+<td class="org-left">same</td>
+</tr>
+
+<tr>
+<td class="org-left">10/15 &#x2013; 10/18</td>
+<td class="org-right">6</td>
+<td class="org-left">lexical analysis</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_abe027/EUmgBCTIcNpDkd5wlRZKEYMBoKQxye9GQbQzlCHOAZUBxA?e=GWe5Ru">handout</a></td>
+<td class="org-left">[dragon] Chap. 3</td>
+</tr>
+
+<tr>
+<td class="org-left">10/22 &#x2013; 10/25</td>
+<td class="org-right">7</td>
+<td class="org-left">the tool lex</td>
+<td class="org-left">same</td>
+<td class="org-left">same</td>
+</tr>
+
+<tr>
+<td class="org-left">10/29 &#x2013; 11/01</td>
+<td class="org-right">8</td>
+<td class="org-left">parsing</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_abe027/ETwoBsNuBodPsa-mfRxSf-QBleVcu06EQ_CcGquwr1d1pw?e=aPfwEY">handout</a></td>
+<td class="org-left">[dragon] Chap. 4</td>
+</tr>
+
+<tr>
+<td class="org-left">11/05 &#x2013; 11/08</td>
+<td class="org-right">9</td>
+<td class="org-left">parsing</td>
+<td class="org-left">same</td>
+<td class="org-left">same</td>
+</tr>
+
+<tr>
+<td class="org-left">11/12 &#x2013; 11/15</td>
+<td class="org-right">10</td>
+<td class="org-left">static typing</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_abe027/EWI8iUUMqERKoKwXZ2R0oigBrHMzFpLgAf9wkM_UxK_XAA?e=MAeAPy">handout</a></td>
+<td class="org-left">[pierce] Chap. 8&#x2013;10, 12</td>
+</tr>
+
+<tr>
+<td class="org-left">11/19 &#x2013; 11/22</td>
+<td class="org-right">11</td>
+<td class="org-left">type inference</td>
+<td class="org-left">same</td>
+<td class="org-left">same</td>
+</tr>
+
+<tr>
+<td class="org-left">11/26 &#x2013; 11/29</td>
+<td class="org-right">12</td>
+<td class="org-left">passing parameter</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_abe027/EXg_PzB8gsFDmFmH_6ozGykB7NZ2K1_C2eilrsaaUrUJPw?e=STkHR3">handout</a></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">12/03 &#x2013; 12/06</td>
+<td class="org-right">13</td>
+<td class="org-left">compiling micro C++</td>
+<td class="org-left">same</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">12/10 &#x2013; 12/13</td>
+<td class="org-right">14</td>
+<td class="org-left">compiling functional language</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_abe027/EUbqA8-y3XJAvxR8kmY9oh0BqoYsYq6ok_1_Vg5VEvCb4A?e=NiOBMm">handout</a></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">12/17 &#x2013; 12/20</td>
+<td class="org-right">15</td>
+<td class="org-left">optimizing compiler: IS, RTL, ERTL, LTL</td>
+<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_abe027/EXhVV0lQiOJNugd4wk4w4vQBxUrLzEqxhs9q70YTMOC5Lw?e=Rc1ZW3">handout</a></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">12/24 &#x2013; 12/27</td>
+<td class="org-right">16</td>
+<td class="org-left">no class</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">12/31 &#x2013; 01/03</td>
+<td class="org-right">17</td>
+<td class="org-left">no class</td>
+<td class="org-left">same</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">01/06 &#x2013; 01/10</td>
+<td class="org-right">18</td>
+<td class="org-left">optimizing compiler: LTL, Linearization</td>
+<td class="org-left">same</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-org5af0da7" class="outline-2">
+<h2 id="org5af0da7">Useful References</h2>
+<div class="outline-text-2" id="text-org5af0da7">
+<ul class="org-ul">
+<li>[dragon] Alfred V. Aho, Monica S. Lam, Ravi Sethi et Jeffrey
+D. Ullman, <a href="https://suif.stanford.edu/dragonbook/">Modern Compilers: Principles, Techniques, and Tools</a>.</li>
+<li>[pierce] Benjamin C. Pierce, <a href="https://www.cis.upenn.edu/~bcpierce/tapl/">Types and Programming Languages</a>.</li>
+<li>[CSA] Randal E. Bryant et David R. O'Hallaron, <a href="https://csapp.cs.cmu.edu/">Computer Systems: A
+Programmer's Perspective</a>.</li>
+<li>Andrew W. Appel, <a href="https://www.cs.princeton.edu/~appel/modern/ml/">Modern Compiler Implementation in ML</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2a606ef" class="outline-2">
+<h2 id="org2a606ef">Evalution</h2>
+<div class="outline-text-2" id="text-org2a606ef">
+</div>
+<div id="outline-container-org8f25af8" class="outline-3">
+<h3 id="org8f25af8">Asseignments (50 %)</h3>
+</div>
+<div id="outline-container-org513a68e" class="outline-3">
+<h3 id="org513a68e">Final Project (50 %)</h3>
+</div>
+</div>
+<div id="outline-container-org5d1ecef" class="outline-2">
+<h2 id="org5d1ecef">Some Useful Resources</h2>
+<div class="outline-text-2" id="text-org5d1ecef">
+</div>
+<div id="outline-container-org6349dd9" class="outline-3">
+<h3 id="org6349dd9">OCaml</h3>
+<div class="outline-text-3" id="text-org6349dd9">
+<ul class="org-ul">
+<li>Besides OCaml compiler, you will also need <a href="https://ocaml.org/manual/5.2/lexyacc.html"><code>ocamllex</code></a> and <a href="http://gallium.inria.fr/~fpottier/menhir/"><code>menhir</code></a></li>
+<li><a href="http://ocaml.org/">OCaml.org</a> very rich</li>
+<li><a href="https://caml.inria.fr/pub/docs/manual-ocaml/">OCaml's Documentation</a></li>
+<li><a href="https://caml.inria.fr/pub/docs/manual-ocaml/libref/">OCaml's Standard Library</a></li>
+<li><a href="https://dev.realworldocaml.org/">Real World OCaml</a>: a book about OCaml from the beginning.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9975a8f" class="outline-3">
+<h3 id="org9975a8f">Assembly x86-64</h3>
+<div class="outline-text-3" id="text-org9975a8f">
+<ul class="org-ul">
+<li><a href="http://web.cecs.pdx.edu/~apt/cs491/x86-64.html">The webpage of Andrew Tolmach</a>, in particular these <a href="http://www.lri.fr/~filliatr/ens/compil/x86-64.pdf">notes</a>.</li>
+<li><a href="https://www.cs.cmu.edu/~fp/courses/15213-s07/misc/asm64-handout.pdf">x86-64 Machine-Level Programming</a> of Randal E. Bryant and David
+R. O’Hallaron</li>
+<li><a href="https://www.sourceware.org/gdb/"><code>gdb</code></a> the debugger</li>
+<li>The site <a href="https://godbolt.org/">godbolt.org</a> allows you to compare assembly codes produced
+by different compilers</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb0622f5" class="outline-2">
+<h2 id="orgb0622f5">Acknowledgement and Credits</h2>
+<div class="outline-text-2" id="text-orgb0622f5">
+<p>
+The course is designed based on Prof. Jean-Christophe
+Filli&acirc;tre's course.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2025-02-06 Thu 20:51</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

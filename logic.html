@@ -3,16 +3,18 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-06-04 Tue 23:37 -->
+<!-- 2025-02-06 Thu 20:47 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Computational Logic and Software Verification</title>
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="src/readtheorg_theme/css/search.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/search.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 </head>
 <body>
@@ -22,69 +24,69 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org4f1b92a">General Infromation</a>
+<li><a href="#org253d849">General Infromation</a>
 <ul>
-<li><a href="#orga291a7d">Overviews</a></li>
-<li><a href="#orgd0ece4a">Recommended Prerequisites</a></li>
-<li><a href="#orgb547f20">Communication</a></li>
-<li><a href="#orgcac7ff9">Office Hours</a></li>
+<li><a href="#org31e6064">Overviews</a></li>
+<li><a href="#org575ef67">Recommended Prerequisites</a></li>
+<li><a href="#orgcb3e075">Communication</a></li>
+<li><a href="#org302c5df">Office Hours</a></li>
 </ul>
 </li>
-<li><a href="#org089dc0e">Topics and Class Schedule</a>
+<li><a href="#org72690bb">Topics and Class Schedule</a>
 <ul>
-<li><a href="#org7a30db4">Topics</a>
+<li><a href="#orgf57ffa6">Topics</a>
 <ul>
-<li><a href="#org6428412">Propositional Logic</a></li>
-<li><a href="#orgfc1ec4b">Predicate Logic</a></li>
-<li><a href="#org1e3804d">Model Checking</a></li>
-<li><a href="#orgd8a0911">Program Verification</a></li>
+<li><a href="#org1bd3fb1">Propositional Logic</a></li>
+<li><a href="#org6eb24ea">Predicate Logic</a></li>
+<li><a href="#org97fa7c8">Model Checking</a></li>
+<li><a href="#org98cd629">Program Verification</a></li>
 </ul>
 </li>
-<li><a href="#org02e3833">Class Schedule</a></li>
+<li><a href="#org4f742a2">Class Schedule</a></li>
 </ul>
 </li>
-<li><a href="#org6295a23">Useful References</a></li>
-<li><a href="#org35cc98b">Evalution</a>
+<li><a href="#orgcf06680">Useful References</a></li>
+<li><a href="#orgf48d2db">Evalution</a>
 <ul>
-<li><a href="#orgfb8ef1d">Asseignments (50 %)</a>
+<li><a href="#org55f643e">Asseignments (40 %)</a>
 <ul>
-<li><a href="#orgdc1989a">Written Homework:</a></li>
-<li><a href="#org8e1df9c">Programming Homework:</a></li>
-<li><a href="#org36a9311">Academic Integrity</a></li>
+<li><a href="#org8cba718">Written Homework:</a></li>
+<li><a href="#orgd8ef1c2">Programming Homework:</a></li>
+<li><a href="#org7803157">Academic Integrity</a></li>
 </ul>
 </li>
-<li><a href="#org832c40f">Mid-terms (20 %)</a></li>
-<li><a href="#org8e0f3c3">Final Project (20 %)</a></li>
-<li><a href="#org551fbbd">Attendance (10 %)</a></li>
+<li><a href="#org1b5a272">Mid-terms (30 %)</a></li>
+<li><a href="#orgb69720f">Final Project (30 %)</a></li>
+<li><a href="#org725bf8c">Attendance (0 %)</a></li>
 </ul>
 </li>
-<li><a href="#orgdd7f8a3">Some tools you may be interested in</a>
+<li><a href="#orga3388df">Some tools you may be interested in</a>
 <ul>
-<li><a href="#orgeef1fce">OCaml</a></li>
-<li><a href="#orgefc0c57">Proof Assistant</a></li>
-<li><a href="#org0213619">LaTeX</a></li>
-<li><a href="#orgc42709f">Others</a></li>
+<li><a href="#orgf71b040">SAT Solvers</a></li>
+<li><a href="#orga1faf36">SMT</a></li>
+<li><a href="#org51e3e30">OCaml</a></li>
+<li><a href="#org7b0894c">Proof Assistant</a></li>
+<li><a href="#org9b4a5e0">LaTeX</a></li>
+<li><a href="#orge9f7151">Others</a></li>
 </ul>
 </li>
-<li><a href="#orgdd4d5d5">Acknowledgement and  Credits</a></li>
+<li><a href="#orgdb0c8a5">Acknowledgement and  Credits</a></li>
 </ul>
 </div>
 </div>
-
-<div id="outline-container-org4f1b92a" class="outline-2">
-<h2 id="org4f1b92a">General Infromation</h2>
-<div class="outline-text-2" id="text-org4f1b92a">
+<div id="outline-container-org253d849" class="outline-2">
+<h2 id="org253d849">General Infromation</h2>
+<div class="outline-text-2" id="text-org253d849">
 <p>
-<b>Courese Number</b>: 332402<br />
+<b>Courese Number</b>: 343370<br />
 <b>Instructor</b>: Jyun-Ao Lin<br />
-<b>Location</b>: 二教 204(e)<br />
+<b>Location</b>: 六教 224(e)<br />
 <b>Time</b>: 09:10 &#x2013; 12:00, Wednesday
 </p>
 </div>
-
-<div id="outline-container-orga291a7d" class="outline-3">
-<h3 id="orga291a7d">Overviews</h3>
-<div class="outline-text-3" id="text-orga291a7d">
+<div id="outline-container-org31e6064" class="outline-3">
+<h3 id="org31e6064">Overviews</h3>
+<div class="outline-text-3" id="text-org31e6064">
 <p>
 Computational logic has been used in a wide range of application in
 computer science, ranging from the deductive approach to Artificial
@@ -101,21 +103,18 @@ computers can be used to achieve this.
 </p>
 </div>
 </div>
-
-
-<div id="outline-container-orgd0ece4a" class="outline-3">
-<h3 id="orgd0ece4a">Recommended Prerequisites</h3>
-<div class="outline-text-3" id="text-orgd0ece4a">
+<div id="outline-container-org575ef67" class="outline-3">
+<h3 id="org575ef67">Recommended Prerequisites</h3>
+<div class="outline-text-3" id="text-org575ef67">
 <p>
 Some basic discrete mathematics, computer programming, algorithms,
-theory of computation.
+theory of computation/formal language.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgb547f20" class="outline-3">
-<h3 id="orgb547f20">Communication</h3>
-<div class="outline-text-3" id="text-orgb547f20">
+<div id="outline-container-orgcb3e075" class="outline-3">
+<h3 id="orgcb3e075">Communication</h3>
+<div class="outline-text-3" id="text-orgcb3e075">
 <p>
 When you need help from the course staff, please use office hours or
 hang around after lecture. For issues requiring privacy, please feel
@@ -123,44 +122,39 @@ free to email the course instructor.
 </p>
 </div>
 </div>
-<div id="outline-container-orgcac7ff9" class="outline-3">
-<h3 id="orgcac7ff9">Office Hours</h3>
-<div class="outline-text-3" id="text-orgcac7ff9">
+<div id="outline-container-org302c5df" class="outline-3">
+<h3 id="org302c5df">Office Hours</h3>
+<div class="outline-text-3" id="text-org302c5df">
 <p>
-13:00&#x2013;17:30 Monday
+13:30&#x2013;17:30 Friday
 </p>
 </div>
 </div>
 </div>
-
-
-
-
-<div id="outline-container-org089dc0e" class="outline-2">
-<h2 id="org089dc0e">Topics and Class Schedule</h2>
-<div class="outline-text-2" id="text-org089dc0e">
+<div id="outline-container-org72690bb" class="outline-2">
+<h2 id="org72690bb">Topics and Class Schedule</h2>
+<div class="outline-text-2" id="text-org72690bb">
 </div>
-<div id="outline-container-org7a30db4" class="outline-3">
-<h3 id="org7a30db4">Topics</h3>
-<div class="outline-text-3" id="text-org7a30db4">
+<div id="outline-container-orgf57ffa6" class="outline-3">
+<h3 id="orgf57ffa6">Topics</h3>
+<div class="outline-text-3" id="text-orgf57ffa6">
 </div>
-<div id="outline-container-org6428412" class="outline-4">
-<h4 id="org6428412">Propositional Logic</h4>
+<div id="outline-container-org1bd3fb1" class="outline-4">
+<h4 id="org1bd3fb1">Propositional Logic</h4>
 </div>
-<div id="outline-container-orgfc1ec4b" class="outline-4">
-<h4 id="orgfc1ec4b">Predicate Logic</h4>
+<div id="outline-container-org6eb24ea" class="outline-4">
+<h4 id="org6eb24ea">Predicate Logic</h4>
 </div>
-<div id="outline-container-org1e3804d" class="outline-4">
-<h4 id="org1e3804d">Model Checking</h4>
+<div id="outline-container-org97fa7c8" class="outline-4">
+<h4 id="org97fa7c8">Model Checking</h4>
 </div>
-<div id="outline-container-orgd8a0911" class="outline-4">
-<h4 id="orgd8a0911">Program Verification</h4>
+<div id="outline-container-org98cd629" class="outline-4">
+<h4 id="org98cd629">Program Verification</h4>
 </div>
 </div>
-
-<div id="outline-container-org02e3833" class="outline-3">
-<h3 id="org02e3833">Class Schedule</h3>
-<div class="outline-text-3" id="text-org02e3833">
+<div id="outline-container-org4f742a2" class="outline-3">
+<h3 id="org4f742a2">Class Schedule</h3>
+<div class="outline-text-3" id="text-org4f742a2">
 <p>
 The current schedule is tentative and subject to change.
 </p>
@@ -187,126 +181,126 @@ The current schedule is tentative and subject to change.
 </thead>
 <tbody>
 <tr>
-<td class="org-left">02/21</td>
+<td class="org-left">02/19</td>
 <td class="org-right">1</td>
 <td class="org-left">Introduction</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EfDQu6Bqi2lDuTe9VLYI1UgB-KrfcXXvQ0Tv8ix8rfVIog?e=RJXYl0">intro slide</a>,<a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/Ea99wbN9q9dPuMA8Gy3MspkBZKMZxVKUR65bGEfa4rrgcA?e=CgKGuP">PL-1</a></td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">02/28</td>
+<td class="org-left">02/26</td>
 <td class="org-right">2</td>
-<td class="org-left">Holiday</td>
+<td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">03/06</td>
+<td class="org-left">03/05</td>
 <td class="org-right">3</td>
-<td class="org-left">Propositional Logic</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EQ-2CAbAHcdPjW8zf3s-RuUB29TL8ZVDK5Ord4v6AUEq7w?e=z3qqcu">PL slide</a></td>
-</tr>
-
-<tr>
-<td class="org-left">03/13</td>
-<td class="org-right">4</td>
-<td class="org-left">SAT-Solver</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EbezlcxkGCJPpqQIRRYhPz8BFBmpcMrkyv89WLd35ekZ1g?e=TXn9iy">SAT Slide</a></td>
-</tr>
-
-<tr>
-<td class="org-left">03/20</td>
-<td class="org-right">5</td>
-<td class="org-left">DPLL and CDCL</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EY-SLy83xFVHlHKlQiKqFrEBtD8jH-c4YgvIVeiWILgS0A?e=KeQarB">DPLL/CDCL slide</a></td>
-</tr>
-
-<tr>
-<td class="org-left">03/27</td>
-<td class="org-right">6</td>
-<td class="org-left">First-Order Logic</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/ERXokwzKmZZDsnsy2km1n0YBe3Vv8_OUQtw4wQNnPo-H8g?e=00gefQ">FOL slide</a></td>
-</tr>
-
-<tr>
-<td class="org-left">04/03</td>
-<td class="org-right">7</td>
-<td class="org-left">Earthquake</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/Ef6xney10K9AtsyaST2782wB4D4AM53Gigcv44aqiKfGBA?e=CdXaPZ">FOT slide</a></td>
-</tr>
-
-<tr>
-<td class="org-left">04/10</td>
-<td class="org-right">8</td>
-<td class="org-left">First-Order Theory</td>
-<td class="org-left">see above</td>
-</tr>
-
-<tr>
-<td class="org-left">04/17</td>
-<td class="org-right">9</td>
-<td class="org-left">Review</td>
+<td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">04/24</td>
-<td class="org-right">10</td>
+<td class="org-left">03/12</td>
+<td class="org-right">4</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/19</td>
+<td class="org-right">5</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/26</td>
+<td class="org-right">6</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/02</td>
+<td class="org-right">7</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/09</td>
+<td class="org-right">8</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/16</td>
+<td class="org-right">9</td>
 <td class="org-left">Mid-term</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">05/01</td>
+<td class="org-left">04/23</td>
+<td class="org-right">10</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/30</td>
 <td class="org-right">11</td>
-<td class="org-left">Quantifier-Elimination</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EdDxa5PShOlKu71gsK5rhnoBILjlzDmUvJEW8aO8LFUEDw?e=z8fYtB">QE slide</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">05/08</td>
+<td class="org-left">05/07</td>
 <td class="org-right">12</td>
-<td class="org-left">LTL Model-Checking</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EcJaUPQcV7dOhnwK6YVwFYoBvOb70oMTN9J3m6r0F-hK0Q?e=liG7fO">LTL-MC slide</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">05/15</td>
+<td class="org-left">05/14</td>
 <td class="org-right">13</td>
-<td class="org-left">CTL Model-Checking</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EW3lFrSUWnhLlr2Xbhwar7oBYhHvuuL5AjRQvSh5suioVQ?e=gTUtGk">CTL-MC slide</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">05/22</td>
+<td class="org-left">05/21</td>
 <td class="org-right">14</td>
-<td class="org-left">SAT-based Model-Checking Algorithm</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EZxyRKrOO6JGpj5hRj_Zo7cBPVhN_leT-4AK72mgo-iHaQ?e=NmvqbW">SAT-MC slide</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">05/29</td>
+<td class="org-left">05/28</td>
 <td class="org-right">15</td>
-<td class="org-left">Program Verification</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/Ecoza1KkKd1HhWTFi7FQSmUBpO3q3bvx5YsqBk2Y0u3ttA?e=VyIakp">Prog-Verf slide</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">06/05</td>
+<td class="org-left">06/04</td>
 <td class="org-right">16</td>
-<td class="org-left">Total Correctness</td>
-<td class="org-left"><a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EXCP1MGNR0BBipowHxpEPRIBj_pBPI90Se_X-rh9g_rhmg?e=IXEGyI">Total-Corr slide</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">06/12</td>
+<td class="org-left">06/11</td>
 <td class="org-right">17</td>
 <td class="org-left">Final Project Presentation</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">06/19</td>
+<td class="org-left">06/18</td>
 <td class="org-right">18</td>
 <td class="org-left">Final Project Presentation</td>
 <td class="org-left">&#xa0;</td>
@@ -316,11 +310,9 @@ The current schedule is tentative and subject to change.
 </div>
 </div>
 </div>
-
-
-<div id="outline-container-org6295a23" class="outline-2">
-<h2 id="org6295a23">Useful References</h2>
-<div class="outline-text-2" id="text-org6295a23">
+<div id="outline-container-orgcf06680" class="outline-2">
+<h2 id="orgcf06680">Useful References</h2>
+<div class="outline-text-2" id="text-orgcf06680">
 <ul class="org-ul">
 <li>A. R. Bradley, Z. Manna,
 <a href="http://www.springer.com/computer/theoretical+computer+science/book/978-3-540-74112-1">Calculus
@@ -341,24 +333,17 @@ of Program Analysis</a></li>
 </ul>
 </div>
 </div>
-
-
-
-<div id="outline-container-org35cc98b" class="outline-2">
-<h2 id="org35cc98b">Evalution</h2>
-<div class="outline-text-2" id="text-org35cc98b">
+<div id="outline-container-orgf48d2db" class="outline-2">
+<h2 id="orgf48d2db">Evalution</h2>
+<div class="outline-text-2" id="text-orgf48d2db">
 </div>
-<div id="outline-container-orgfb8ef1d" class="outline-3">
-<h3 id="orgfb8ef1d">Asseignments (50 %)</h3>
-<div class="outline-text-3" id="text-orgfb8ef1d">
-<p>
-<a href="https://ntutcc.sharepoint.com/:b:/s/msteams_943f34/EcrMsVG04ydCgXt3U8NSprkBFLwoocXvzLq8g6xpScTN3g?e=6JrWUm">Homework 1</a>
-</p>
+<div id="outline-container-org55f643e" class="outline-3">
+<h3 id="org55f643e">Asseignments (40 %)</h3>
+<div class="outline-text-3" id="text-org55f643e">
 </div>
-
-<div id="outline-container-orgdc1989a" class="outline-4">
-<h4 id="orgdc1989a">Written Homework:</h4>
-<div class="outline-text-4" id="text-orgdc1989a">
+<div id="outline-container-org8cba718" class="outline-4">
+<h4 id="org8cba718">Written Homework:</h4>
+<div class="outline-text-4" id="text-org8cba718">
 <p>
 The goal of the written homework is to help you refine the fundamental
 skills, and better understand the theoretical underpinnings, that you
@@ -377,10 +362,9 @@ preferably be typeset in LaTeX.
 </p>
 </div>
 </div>
-
-<div id="outline-container-org8e1df9c" class="outline-4">
-<h4 id="org8e1df9c">Programming Homework:</h4>
-<div class="outline-text-4" id="text-org8e1df9c">
+<div id="outline-container-orgd8ef1c2" class="outline-4">
+<h4 id="orgd8ef1c2">Programming Homework:</h4>
+<div class="outline-text-4" id="text-orgd8ef1c2">
 <p>
 The programming homework is designed to give you hands-on experience
 writing bug-free code with the help of formal verification tools. In
@@ -398,10 +382,9 @@ to compile and run your program. It must also include a short report
 </p>
 </div>
 </div>
-
-<div id="outline-container-org36a9311" class="outline-4">
-<h4 id="org36a9311">Academic Integrity</h4>
-<div class="outline-text-4" id="text-org36a9311">
+<div id="outline-container-org7803157" class="outline-4">
+<h4 id="org7803157">Academic Integrity</h4>
+<div class="outline-text-4" id="text-org7803157">
 <p>
 Students are expected to complete each assignment on their own, and
 should be able to explain all of the work that they hand in. Copying
@@ -425,26 +408,25 @@ the course staff before you proceed.
 </div>
 </div>
 </div>
-
-<div id="outline-container-org832c40f" class="outline-3">
-<h3 id="org832c40f">Mid-terms (20 %)</h3>
-<div class="outline-text-3" id="text-org832c40f">
+<div id="outline-container-org1b5a272" class="outline-3">
+<h3 id="org1b5a272">Mid-terms (30 %)</h3>
+<div class="outline-text-3" id="text-org1b5a272">
 <p>
 TBA
 </p>
 </div>
 </div>
-<div id="outline-container-org8e0f3c3" class="outline-3">
-<h3 id="org8e0f3c3">Final Project (20 %)</h3>
-<div class="outline-text-3" id="text-org8e0f3c3">
+<div id="outline-container-orgb69720f" class="outline-3">
+<h3 id="orgb69720f">Final Project (30 %)</h3>
+<div class="outline-text-3" id="text-orgb69720f">
 <p>
 TBA
 </p>
 </div>
 </div>
-<div id="outline-container-org551fbbd" class="outline-3">
-<h3 id="org551fbbd">Attendance (10 %)</h3>
-<div class="outline-text-3" id="text-org551fbbd">
+<div id="outline-container-org725bf8c" class="outline-3">
+<h3 id="org725bf8c">Attendance (0 %)</h3>
+<div class="outline-text-3" id="text-org725bf8c">
 <p>
 All students are expected to attend the lectures. However I appreciate
 that different people learn differently. Thus the attendance won't be
@@ -453,16 +435,36 @@ recorded.
 </div>
 </div>
 </div>
-
-
-
-<div id="outline-container-orgdd7f8a3" class="outline-2">
-<h2 id="orgdd7f8a3">Some tools you may be interested in</h2>
-<div class="outline-text-2" id="text-orgdd7f8a3">
+<div id="outline-container-orga3388df" class="outline-2">
+<h2 id="orga3388df">Some tools you may be interested in</h2>
+<div class="outline-text-2" id="text-orga3388df">
 </div>
-<div id="outline-container-orgeef1fce" class="outline-3">
-<h3 id="orgeef1fce">OCaml</h3>
-<div class="outline-text-3" id="text-orgeef1fce">
+<div id="outline-container-orgf71b040" class="outline-3">
+<h3 id="orgf71b040">SAT Solvers</h3>
+<div class="outline-text-3" id="text-orgf71b040">
+<ul class="org-ul">
+<li><a href="https://satcompetition.github.io/">SAT competition</a></li>
+<li><a href="http://minisat.se/">MiniSAT</a></li>
+<li><a href="https://github.com/msoos/cryptominisat">CryptoMiniSat</a></li>
+<li><a href="https://github.com/arminbiere/cadical">CaDiCaL</a></li>
+<li><a href="https://fmv.jku.at/kissat/">kissat</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga1faf36" class="outline-3">
+<h3 id="orga1faf36">SMT</h3>
+<div class="outline-text-3" id="text-orga1faf36">
+<ul class="org-ul">
+<li><a href="https://smt-lib.org/">SMT-LIB</a></li>
+<li><a href="https://github.com/Z3Prover/z3">Z3</a></li>
+<li><a href="https://cvc5.github.io/">cvc5</a></li>
+<li><a href="https://yices.csl.sri.com/">Yices</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org51e3e30" class="outline-3">
+<h3 id="org51e3e30">OCaml</h3>
+<div class="outline-text-3" id="text-org51e3e30">
 <ul class="org-ul">
 <li><a href="http://ocaml.org/">OCaml</a></li>
 <li><a href="https://caml.inria.fr/pub/docs/manual-ocaml/">OCaml's Documentation</a></li>
@@ -471,40 +473,36 @@ recorded.
 </ul>
 </div>
 </div>
-
-<div id="outline-container-orgefc0c57" class="outline-3">
-<h3 id="orgefc0c57">Proof Assistant</h3>
-<div class="outline-text-3" id="text-orgefc0c57">
+<div id="outline-container-org7b0894c" class="outline-3">
+<h3 id="org7b0894c">Proof Assistant</h3>
+<div class="outline-text-3" id="text-org7b0894c">
 <ul class="org-ul">
-<li><a href="https://coq.inria.fr/">Coq</a> (<a href="https://softwarefoundations.cis.upenn.edu/lf-current/toc.html">introduction to the language</a>)</li>
+<li><a href="https://coq.inria.fr/">Coq</a> (<a href="https://softwarefoundations.cis.upenn.edu/lf-current/toc.html">A good introduction to programming language and coq</a>)</li>
 <li><a href="https://leanprover.github.io/">Lean</a></li>
 <li><a href="https://wiki.portal.chalmers.se/agda/pmwiki.php">Agda</a> (<a href="https://agda.readthedocs.io/en/latest/">Agda's documentation</a>)</li>
 </ul>
 </div>
 </div>
-
-<div id="outline-container-org0213619" class="outline-3">
-<h3 id="org0213619">LaTeX</h3>
-<div class="outline-text-3" id="text-org0213619">
+<div id="outline-container-org9b4a5e0" class="outline-3">
+<h3 id="org9b4a5e0">LaTeX</h3>
+<div class="outline-text-3" id="text-org9b4a5e0">
 <ul class="org-ul">
 <li><a href="https://www.logicmatters.net/latex-for-logicians/">LaTeX for Logicians</a></li>
 </ul>
 </div>
 </div>
-
-<div id="outline-container-orgc42709f" class="outline-3">
-<h3 id="orgc42709f">Others</h3>
-<div class="outline-text-3" id="text-orgc42709f">
+<div id="outline-container-orge9f7151" class="outline-3">
+<h3 id="orge9f7151">Others</h3>
+<div class="outline-text-3" id="text-orge9f7151">
 <ul class="org-ul">
 <li><a href="https://github.com/ligurio/practical-fm">A List of companies that use formal verification methods in software engineering</a></li>
 </ul>
 </div>
 </div>
 </div>
-
-<div id="outline-container-orgdd4d5d5" class="outline-2">
-<h2 id="orgdd4d5d5">Acknowledgement and  Credits</h2>
-<div class="outline-text-2" id="text-orgdd4d5d5">
+<div id="outline-container-orgdb0c8a5" class="outline-2">
+<h2 id="orgdb0c8a5">Acknowledgement and  Credits</h2>
+<div class="outline-text-2" id="text-orgdb0c8a5">
 <p>
 The course is designed based on the
 <a href="https://homepage.iis.sinica.edu.tw/~bywang/courses/comp-logic/">Introduction
@@ -517,7 +515,7 @@ slides.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2024-06-04 Tue 23:37</p>
+<p class="date">Created: 2025-02-06 Thu 20:47</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
