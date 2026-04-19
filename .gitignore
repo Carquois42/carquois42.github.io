@@ -1,2 +1,6 @@
 
-compiler.html
+/.DS_Store
+/.build
+/.lake
+/.packages
+/_site

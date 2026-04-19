@@ -1,0 +1,14 @@
+name = "website"
+defaultTargets = ["Blog", "generate-site"]
+
+[[require]]
+name = "verso"
+git = "https://github.com/leanprover/verso.git"
+rev = "v4.29.0"
+
+[[lean_lib]]
+name = "Blog"
+
+[[lean_exe]]
+name = "generate-site"
+root = "Main"
