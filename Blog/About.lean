@@ -22,10 +22,10 @@ under the supervision of Marc Rosso and
 [Olivier Schiffmann](https://sites.google.com/site/olivierschiffmann/).
 
 My current research focuses on formal methods, verification, automata,
-decision procedures, cryptography, and quantum computing, especially
-quantum program and circuit verification.
+decision procedures and quantum computing, especially quantum program
+and circuit verification.
 
-At NTUT, I teach algorithms, compilers, computational logic and software
-verification, and formal languages.
+At Taipei Tech (NTUT), I teach algorithms, compilers, computational
+logic and software verification, and formal languages.
 
 For publications, please see [DBLP](https://dblp.org/pid/338/7203.html).

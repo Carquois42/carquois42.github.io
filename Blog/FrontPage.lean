@@ -10,8 +10,8 @@ and [iFIRST](https://ifirst.ntut.edu.tw/index.php?Lang=en) at
 [National Taipei University of Technology](https://www-en.ntut.edu.tw/).
 
 My work sits around formal methods, verification, automata theory,
-decision procedures, cryptography, and quantum computing, with a current
-emphasis on quantum program and circuit verification.
+decision procedures, and quantum computing, with a current emphasis on
+quantum program and circuit verification.
 
 # Contact
 
@@ -21,8 +21,8 @@ emphasis on quantum program and circuit verification.
 
 # Current Focus
 
-I am interested in quantum program verification, privacy-preserving
-decision procedures, and formal verification more broadly.
+I am interested in quantum program verification, programming
+languages, decision procedures, and formal verification more broadly.
 
 I am also looking for talented and self-motivated students interested in
 formal verification, decision procedures, and verification of quantum
@@ -31,4 +31,4 @@ programs.
 # Links
 
 - [DBLP](https://dblp.org/pid/338/7203.html)
-- [AutoQ](https://github.com/alan23273850/AutoQ)
+- [AutoQ](https://github.com/fmlab-iis/AutoQ)
