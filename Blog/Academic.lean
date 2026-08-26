@@ -89,7 +89,6 @@ For a complete and updated bibliography, see
 ## Program/Review Committee
 
 - 2027: OOPSLA,
-  PLDI
 - 2026: [VMCAI](https://conf.researchr.org/home/VMCAI-2026),
   [POPL SRC](https://popl26.sigplan.org/track/POPL-2026-student-research-competition),
   [FMCAD](https://fmcad.org/FMCAD26/)
