@@ -15,7 +15,7 @@ For a complete and updated bibliography, see
 
 - J.-A. Lin, Y.-F. Chen, J. Havlík, O. Lengal, F.-Y. Lo, W.-L. Tsai, Y.-J. Wu,
   _Verifying Repeat-until-Success Protocols using Automata_,
-  OOPSLA 2026, _accepted_.
+  OOPSLA 2026, [DOI](https://dl.acm.org/doi/10.1145/3839506).
 - D.-D. Yen, P. Totzke, Y. C. Tsai, J.-A. Lin,
   _The Emptiness Problem for Quantum Finite Automata with Classical States_
   ATVA 2026, _accepted_.
@@ -86,12 +86,13 @@ For a complete and updated bibliography, see
 
 # Community Service
 
-## Program/Review Committee
+## Program/Review Committee/Competition Judges
 
-- 2027: OOPSLA,
+- 2027: OOPSLA, PLDI, [POPL SRC](https://popl27.sigplan.org/committee/POPL-2027-student-research-competition-selection-committee)
 - 2026: [VMCAI](https://conf.researchr.org/home/VMCAI-2026),
   [POPL SRC](https://popl26.sigplan.org/track/POPL-2026-student-research-competition),
-  [FMCAD](https://fmcad.org/FMCAD26/)
+  [FMCAD](https://fmcad.org/FMCAD26/),
+  [SPLASH/ISSTA SRC Judges](https://conf.researchr.org/track/splash-issta-2026/splash-issta-2026-student-research-competition)
 - 2025: [TASE](https://cyprusconferences.org/tase2025/)
 
 
